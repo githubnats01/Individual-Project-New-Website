@@ -1,0 +1,48 @@
+@use 'variables';
+
+@mixin container-layout($cont-width: 100%, $cont-height: 84px, $cont-colors: variables.$header-container-fill){
+    width: $cont-width;
+    height: $cont-height;
+    background-color: $cont-colors;
+}
+
+@mixin item-position($pos: absolute, $left : 0%, $right : 0%, $top: 0%, $bot: 0%){
+    position: $pos;
+    left: $left;
+    right: $right;
+    top: $top;
+    bottom: $bot;
+}
+
+@mixin font-style($fontfam: Inter,$fstyle: normal, $fweight: 500, $fsize: 16px, $lineheight: 24px ,$fcolor: white){
+    font-family: $fontfam;
+    font-style: $fstyle;
+    font-weight: $fweight;
+    font-size: $fsize;
+    line-height: $lineheight;
+    color: $fcolor;
+}
+
+@mixin font-style-footer($fontfam: Inter,$fstyle: normal, $fweight: 400, $fsize: 12px, $lineheight: 130% ,$fcolor: #D7F8FF){
+    font-family: $fontfam;
+    font-style: $fstyle;
+    font-weight: $fweight;
+    font-size: $fsize;
+    line-height: $lineheight;
+    color: $fcolor;
+}
+
+@mixin menu-inside-layout($inside-flex: none, $inside-order: 0, $inside-flexg: 0){
+    flex: $inside-flex;
+    order: $inside-order;
+    flex-grow: $inside-flexg;
+}
+
+@mixin footer-menu($letter-sp: -0.03em,$flx: none,$ordr: 1, $flex-grw: 0, $pos-L:88px, $pos-T: 0px){
+    letter-spacing:$letter-sp;
+    flex: $flx;
+    order: $ordr;
+    flex-grow: $flex-grw;
+    left: $pos-L;
+    top: $pos-T;
+}
