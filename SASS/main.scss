@@ -82,14 +82,14 @@
     border: transparent;
 }
 
-#close{
-    position: relative;
-    color: #9D9DB5;
-    cursor: pointer;
-    font-size: 16px;
-    padding-left: 280px;
-    padding-top: 10px;
-}   
+// #close{
+//     position: relative;
+//     color: #9D9DB5;
+//     cursor: pointer;
+//     font-size: 16px;
+//     padding-left: 280px;
+//     padding-top: 10px;
+// }   
 
 #close:hover{
     color: #9D9DB5;
@@ -104,6 +104,9 @@
 .check1.is-marked,.check2.is-marked,.check3.is-marked,.check4.is-marked,.check5.is-marked,.check6.is-marked,.check7.is-marked,.check8.is-marked,.check9.is-marked{
     display: flex;
     color: variables.$heart-fill;
+    #checkStyle{
+        display: flex;
+    }
 }
 
 .marked1.marked,.marked2.marked,.marked3.marked,.marked4.marked,.marked5.marked,.marked6.marked,.marked7.marked,.marked8.marked,.marked9.marked{
@@ -118,7 +121,6 @@
 }
 
 #title-container{
-    // @include mixins.item-position($pos: absolute, $left : 0%, $right : 0%, $top: 0, $bot: 737px);
     position: absolute;
     bottom: 0%;
     align-items: center;
@@ -150,9 +152,29 @@
     border-radius: 5%;
 }
 
+#checkStyle{
+    display: none;
+}
+
 #content-1:hover,#content-2:hover,#content-3:hover,#content-4:hover,#content-5:hover,#content-6:hover,#content-7:hover,#content-8:hover,#content-9:hover{
     box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
     transform: scale(1.1);
+    #close{
+        position: relative;
+        color: #9D9DB5;
+        cursor: pointer;
+        font-size: 16px;
+        padding-left: 280px;
+        padding-top: 10px;
+    }
+    #checkStyle{
+        display: block;
+        position: relative;
+    };  
+    #checkStyle{
+        display: block;
+        position: relative;
+    }
 }
 
 #like-container{

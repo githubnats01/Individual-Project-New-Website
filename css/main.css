@@ -102,15 +102,6 @@
   border: transparent;
 }
 
-#close {
-  position: relative;
-  color: #9D9DB5;
-  cursor: pointer;
-  font-size: 16px;
-  padding-left: 280px;
-  padding-top: 10px;
-}
-
 #close:hover {
   color: #9D9DB5;
   -webkit-text-fill-color: #1b2eda;
@@ -124,6 +115,9 @@
 .check1.is-marked, .check2.is-marked, .check3.is-marked, .check4.is-marked, .check5.is-marked, .check6.is-marked, .check7.is-marked, .check8.is-marked, .check9.is-marked {
   display: flex;
   color: #0266FF;
+}
+.check1.is-marked #checkStyle, .check2.is-marked #checkStyle, .check3.is-marked #checkStyle, .check4.is-marked #checkStyle, .check5.is-marked #checkStyle, .check6.is-marked #checkStyle, .check7.is-marked #checkStyle, .check8.is-marked #checkStyle, .check9.is-marked #checkStyle {
+  display: flex;
 }
 
 .marked1.marked, .marked2.marked, .marked3.marked, .marked4.marked, .marked5.marked, .marked6.marked, .marked7.marked, .marked8.marked, .marked9.marked {
@@ -181,9 +175,29 @@
   border-radius: 5%;
 }
 
+#checkStyle {
+  display: none;
+}
+
 #content-1:hover, #content-2:hover, #content-3:hover, #content-4:hover, #content-5:hover, #content-6:hover, #content-7:hover, #content-8:hover, #content-9:hover {
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
   transform: scale(1.1);
+}
+#content-1:hover #close, #content-2:hover #close, #content-3:hover #close, #content-4:hover #close, #content-5:hover #close, #content-6:hover #close, #content-7:hover #close, #content-8:hover #close, #content-9:hover #close {
+  position: relative;
+  color: #9D9DB5;
+  cursor: pointer;
+  font-size: 16px;
+  padding-left: 280px;
+  padding-top: 10px;
+}
+#content-1:hover #checkStyle, #content-2:hover #checkStyle, #content-3:hover #checkStyle, #content-4:hover #checkStyle, #content-5:hover #checkStyle, #content-6:hover #checkStyle, #content-7:hover #checkStyle, #content-8:hover #checkStyle, #content-9:hover #checkStyle {
+  display: block;
+  position: relative;
+}
+#content-1:hover #checkStyle, #content-2:hover #checkStyle, #content-3:hover #checkStyle, #content-4:hover #checkStyle, #content-5:hover #checkStyle, #content-6:hover #checkStyle, #content-7:hover #checkStyle, #content-8:hover #checkStyle, #content-9:hover #checkStyle {
+  display: block;
+  position: relative;
 }
 
 #like-container {
